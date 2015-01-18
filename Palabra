@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class Palabra {
+
+	String palabras[] = {"arbol","castillo","selva","casa","tribunal","piramida",
+							"trebol","camino","ritual","vaquero","deporte","partido","penal",
+							"cancha","zapato"};	
+	
+	public String ObtenerPalabra() {
+		 Random rnd = new Random();
+		 int eleccion =  (int)(rnd.nextDouble() * 14); //generar numero aleatorios de 0 - 13
+		 String PalElejida = palabras[eleccion];
+		 
+		 return PalElejida;
+	}
+	
+	public void separarPalabra(String unaPalabra, char letraElejida){
+		int longPalabra = unaPalabra.length();
+		for (int i = 0; i<= longPalabra;i = i+1){
+			char unaLetra = unaPalabra.charAt(i);
+			if (unaLetra == letraElejida){
+				System.out.println("Correcto");
+			}
+			
+		}
+	}
+
+}
