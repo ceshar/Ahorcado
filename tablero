@@ -1,0 +1,131 @@
+import java.awt.*;
+import java.awt.event.*;
+
+public class Tablero extends Frame implements ActionListener{
+//public class Tablero extends Frame {
+	Button aButton,bButton,cButton,dButton,eButton,fButton,gButton,
+	hButton,iButton,jButton,kButton,lButton,mButton,nButton,oButton,
+	pButton,qButton,rButton,sButton,tButton,uButton,vButton,wButton,
+	xButton,yButton,zButton;
+	
+	public Tablero() {
+		//Constructor
+		super("--> Ahorcado <--");	//encabezado de la ventana
+		setSize(800, 600); //proporciones de la ventana
+		addWindowListener(new BasicWindowMonitor());
+	
+		//Panel toolbar = new Panel();
+		//toolbar.setLayout(new FlowLayout(FlowLayout.CENTER));
+		
+		aButton = new Button("a"); //anadiendo nombre al boton
+		aButton.addActionListener(this);
+		add(aButton);
+		//toolbar.add(aButton);
+		/*
+		bButton = new Button("b"); //anadiendo nombre al boton
+		bButton.addActionListener(this);
+		toolbar.add(bButton);
+		
+		cButton = new Button("c"); //anadiendo nombre al boton
+		cButton.addActionListener(this);
+		toolbar.add(cButton);
+		
+		dButton = new Button("d"); //anadiendo nombre al boton
+		dButton.addActionListener(this);
+		toolbar.add(dButton);
+		
+		eButton = new Button("e"); //anadiendo nombre al boton
+		eButton.addActionListener(this);
+		toolbar.add(eButton);
+		
+		fButton = new Button("f"); //anadiendo nombre al boton
+		fButton.addActionListener(this);
+		toolbar.add(fButton);
+		
+		gButton = new Button("g"); //anadiendo nombre al boton
+		gButton.addActionListener(this);
+		toolbar.add(gButton);
+		
+		hButton = new Button("h"); //anadiendo nombre al boton
+		hButton.addActionListener(this);
+		toolbar.add(hButton);
+		
+		iButton = new Button("i"); //anadiendo nombre al boton
+		iButton.addActionListener(this);
+		toolbar.add(iButton);
+		
+		jButton = new Button("j"); //anadiendo nombre al boton
+		jButton.addActionListener(this);
+		toolbar.add(jButton);
+		
+		kButton = new Button("k"); //anadiendo nombre al boton
+		kButton.addActionListener(this);
+		toolbar.add(kButton);
+		
+		lButton = new Button("l"); //anadiendo nombre al boton
+		lButton.addActionListener(this);
+		toolbar.add(lButton);
+		
+		mButton = new Button("m"); //anadiendo nombre al boton
+		mButton.addActionListener(this);
+		toolbar.add(mButton);
+		
+		nButton = new Button("n"); //anadiendo nombre al boton
+		nButton.addActionListener(this);
+		toolbar.add(nButton);
+		
+		oButton = new Button("o"); //anadiendo nombre al boton
+		oButton.addActionListener(this);
+		toolbar.add(oButton);
+		
+		pButton = new Button("p"); //anadiendo nombre al boton
+		pButton.addActionListener(this);
+		toolbar.add(pButton);
+		
+		qButton = new Button("q"); //anadiendo nombre al boton
+		qButton.addActionListener(this);
+		toolbar.add(qButton);
+		
+		rButton = new Button("r"); //anadiendo nombre al boton
+		rButton.addActionListener(this);
+		toolbar.add(rButton);
+		
+		sButton = new Button("s"); //anadiendo nombre al boton
+		sButton.addActionListener(this);
+		toolbar.add(sButton);
+		
+		tButton = new Button("t"); //anadiendo nombre al boton
+		tButton.addActionListener(this);
+		toolbar.add(tButton);
+		
+		uButton = new Button("u"); //anadiendo nombre al boton
+		uButton.addActionListener(this);
+		toolbar.add(uButton);
+		
+		vButton = new Button("v"); //anadiendo nombre al boton
+		vButton.addActionListener(this);
+		toolbar.add(vButton);
+		
+		wButton = new Button("w"); //anadiendo nombre al boton
+		wButton.addActionListener(this);
+		toolbar.add(wButton);
+		
+		xButton = new Button("x"); //anadiendo nombre al boton
+		xButton.addActionListener(this);
+		toolbar.add(xButton);
+		
+		yButton = new Button("y"); //anadiendo nombre al boton
+		yButton.addActionListener(this);
+		toolbar.add(yButton);
+		
+		zButton = new Button("z"); //anadiendo nombre al boton
+		zButton.addActionListener(this);
+		toolbar.add(zButton);
+		
+		add(toolbar, BorderLayout.CENTER);*/
+	}
+	public static void main(String args[]) {
+		//ToolbarFrame1 tf1 = new ToolbarFrame1();
+		//tf1.setVisible(true);
+	}
+}
