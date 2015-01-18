@@ -1,0 +1,12 @@
+import java.awt.event.*;
+import java.awt.Window;
+
+public class BasicWindowMonitor extends WindowAdapter {
+
+	public void windowClosing(WindowEvent e) {
+	 Window Win = e.getWindow();
+	 Win.setVisible(false);
+	 Win.dispose();
+	 System.exit(0);
+	}
+}
