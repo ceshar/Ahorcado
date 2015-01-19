@@ -2,7 +2,6 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class Tablero extends Frame implements ActionListener{
-//public class Tablero extends Frame {
 	Button aButton,bButton,cButton,dButton,eButton,fButton,gButton,
 	hButton,iButton,jButton,kButton,lButton,mButton,nButton,oButton,
 	pButton,qButton,rButton,sButton,tButton,uButton,vButton,wButton,
@@ -14,14 +13,14 @@ public class Tablero extends Frame implements ActionListener{
 		setSize(800, 600); //proporciones de la ventana
 		addWindowListener(new BasicWindowMonitor());
 	
-		//Panel toolbar = new Panel();
-		//toolbar.setLayout(new FlowLayout(FlowLayout.CENTER));
+		Panel toolbar = new Panel();
+		toolbar.setLayout(new FlowLayout(FlowLayout.CENTER));
 		
 		aButton = new Button("a"); //anadiendo nombre al boton
 		aButton.addActionListener(this);
-		add(aButton);
-		//toolbar.add(aButton);
-		/*
+		//add(aButton);
+		toolbar.add(aButton);
+		
 		bButton = new Button("b"); //anadiendo nombre al boton
 		bButton.addActionListener(this);
 		toolbar.add(bButton);
@@ -122,10 +121,20 @@ public class Tablero extends Frame implements ActionListener{
 		zButton.addActionListener(this);
 		toolbar.add(zButton);
 		
-		add(toolbar, BorderLayout.CENTER);*/
+		add(toolbar, BorderLayout.CENTER);
 	}
 	public static void main(String args[]) {
-		//ToolbarFrame1 tf1 = new ToolbarFrame1();
-		//tf1.setVisible(true);
+		String pal1;
+		Palabra palabra = new Palabra();
+		pal1 = palabra.ObtenerPalabra();
+		System.out.println(pal1);
+		Tablero t1 = new Tablero();
+		t1.setVisible(true);
+	}
+	@Override
+	public String actionPerformed(ActionEvent e) {
+		System.out.println(e.getActionCommand());	
+		String letra = e.getActionCommand();
+		return letra;
 	}
 }
